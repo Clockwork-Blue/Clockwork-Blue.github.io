@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globalCss/global.css">
     <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon">
+    <script src="globalJs/global.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -21,12 +22,8 @@
             </div>
             <div class="dFlex FlexDirecVert flex-center">
                 <div id="repo">Repositories</div>
-            <div class="main-content">
-                <div class="card"">
-                    <div class="img-row"><img class="cardImg" src="globalImg/pongRepoImg.png" alt=""></div>
-                    <div class="text-row">Pong</div>
-
-                </div>
+            <div id="main" class="main-content">
+                <script>cardMaker("Pong") ;cardMaker("RPS")</script>
                 </div>
             </div>
         </div>
