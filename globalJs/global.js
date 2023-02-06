@@ -1,10 +1,12 @@
-function cardMaker(repo) {
+function cardMaker(repo, target) {
     //get main cont div
     let main = document.getElementById("main");
     //make main card
-    let card = document.createElement("div");
+    let card = document.createElement("a");
     card.classList.add("card");
     main.appendChild(card);
+    card.href= "https://github.com/Clockwork-Blue/" + target;
+    //anchor
     //img row
     let cImgDiv = document.createElement("div");
     cImgDiv.classList.add("img-row");
