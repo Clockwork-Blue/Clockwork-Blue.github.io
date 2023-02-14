@@ -3,6 +3,7 @@ function cardMakerI(repo, target) {
     let main = document.getElementById("main");
     //make main card
     let card = document.createElement("a");
+    card.target="_blank";
     card.classList.add("card");
     main.appendChild(card);
     card.href= "https://github.com/Clockwork-Blue/" + target;
@@ -23,12 +24,13 @@ function cardMakerI(repo, target) {
     card.appendChild(textRow);
     
 }
-https://clockwork-blue.github.io/cards-test/index.html
+
 function cardMakerE(repo, target) {
     //get main cont div
     let main = document.getElementById("main");
     //make main card
     let card = document.createElement("a");
+    card.target="_blank";
     card.classList.add("card");
     main.appendChild(card);
     card.href= target;
