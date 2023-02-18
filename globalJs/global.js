@@ -1,4 +1,4 @@
-function cardMakerI(repo, target) {
+function cardMakerI(repo, target, type) {
     //get main cont div
     let main = document.getElementById("main");
     //make main card
@@ -14,7 +14,7 @@ function cardMakerI(repo, target) {
     card.appendChild(cImgDiv);
     let cImg = document.createElement("img");
     cImg.classList.add("cardImg");
-    let source = "globalImg/" + repo + ".png";
+    let source = "globalImg/" + repo + "." + type;
     cImg.src = source;
     cImgDiv.appendChild(cImg);
     //text-row
@@ -25,7 +25,7 @@ function cardMakerI(repo, target) {
     
 }
 
-function cardMakerE(repo, target) {
+function cardMakerE(repo, target, type) {
     //get main cont div
     let main = document.getElementById("main");
     //make main card
@@ -41,7 +41,7 @@ function cardMakerE(repo, target) {
     card.appendChild(cImgDiv);
     let cImg = document.createElement("img");
     cImg.classList.add("cardImg");
-    let source = "globalImg/" + repo + ".png";
+    let source = "globalImg/" + repo + "." + type;
     cImg.src = source;
     cImgDiv.appendChild(cImg);
     //text-row
