@@ -1,4 +1,4 @@
-function cardMaker(repo, target, type, form) {
+function cardMaker(repo, target, form) {
     //get main cont div
     let main = document.getElementById("main");
     //make main card
@@ -19,7 +19,7 @@ function cardMaker(repo, target, type, form) {
     card.appendChild(cImgDiv);
     let cImg = document.createElement("img");
     cImg.classList.add("cardImg");
-    cImg.src = "globalImg/" + repo + "." + type;
+    cImg.src = "globalImg/" + repo + ".webp";
     cImgDiv.appendChild(cImg);
     //text-row
     let textRow = document.createElement("div");
