@@ -23,7 +23,13 @@
             <div class="dFlex FlexDirecVert flex-center">
                 <div id="repo">REPOSITORIES</div>
             <div id="main" class="main-content">
-                <script>cardMakerI("Pong", "pong", "png") ;cardMakerI("RPS", "Rock-Paper-Scissors", "png");cardMakerI("GTN", "Guess-The-Number", "png");cardMakerE("Cards","https://clockwork-blue.github.io/cards-test/", "png");cardMakerE("Keyframe","https://clockwork-blue.github.io/keypass-fun/", "gif")</script>
+                <script>
+                    cardMaker("Pong", "pong", "png", "repo") ;
+                cardMaker("RPS", "Rock-Paper-Scissors", "png", "repo");
+                cardMaker("GTN", "Guess-The-Number", "png", "repo");
+                cardMaker("Cards","cards-test", "png", "inner");
+                cardMaker("Keyframe","keypass-fun", "gif", "inner")
+                </script>
                 <div>
                     </div>
                 </div>
@@ -31,6 +37,5 @@
             </div>
         </div>
         <footer>Massengo Adrien - 2023</footer>
-    </div>
 </body>
 </html>
