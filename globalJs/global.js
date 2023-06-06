@@ -16,10 +16,21 @@ function cardMaker(repo, target, form) {
     //img row
     let cImgDiv = document.createElement("div");
     cImgDiv.classList.add("img-row");
+    cImgDiv.classList.add("img-p");
+    cImgDiv.style.backgroundImage = "url(\"globalImg/" + repo + "-small.webp\")";
+    function load(){
+        cImgDiv.classList.add("loaded");
+    }
     card.appendChild(cImgDiv);
     let cImg = document.createElement("img");
+    cImg.loading ="lazy";
     cImg.classList.add("cardImg");
     cImg.src = "globalImg/" + repo + ".webp";
+    if (cImg.complete) {
+        load();
+    } else {
+        cImg.addEventListener("load", load);
+    }
     cImgDiv.appendChild(cImg);
     //text-row
     let textRow = document.createElement("div");
